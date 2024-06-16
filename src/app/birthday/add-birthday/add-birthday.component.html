@@ -1,0 +1,30 @@
+<div class="addBirthdayContainer">
+    <h2>Enter Your Special One's Birthday Details</h2>
+    <p>Fill out the form to add your loved one's birthday and ensure you never miss their special day!</p>
+
+    <form>
+        <div>
+            <label for="">Name:</label>
+            <input type="text" placeholder="Enter name">
+        </div>
+
+        <div>
+            <label for="day">Day: </label>
+            <select name="day" id="day">
+                <option value="" hidden>Select Day</option>
+                @for(day of generateDays; track day){
+                    <option value="day">{{day}}</option>
+                }
+            </select>
+
+            <label for="month">Month: </label>
+            <select name="month" id="month">
+                <option value="" hidden>Select Month</option>
+                @for(month of generateMonths; track $index){
+                    <option value="{{$index}}">{{month}}</option>
+                }
+            </select>
+        </div>
+        <button>Add Birthday</button>
+    </form>
+</div>

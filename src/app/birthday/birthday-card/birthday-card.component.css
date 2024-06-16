@@ -1,0 +1,17 @@
+.birthdayBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 6px;
+    background: rgb(59, 154, 59);
+    color: white;
+}
+h2{
+    font-size: 1.2rem;
+}
+p{
+    font-size: .9rem;
+}

@@ -1,0 +1,48 @@
+.addBirthdayContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.addBirthdayContainer h2{
+    font-size: 2rem;
+    margin: 40px 0px 0px;
+}
+.addBirthdayContainer p{
+    font-size: 1rem;
+    width: 600px;
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+form div{
+    margin: 10px 0px;
+}
+form label{
+    margin-right: 10px;
+}
+form input[type="text"]{
+    padding: 6px 20px;
+    width: 300px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+form select{
+    padding: 6px 20px;
+    margin: 0px 20px 0px 0px;
+}
+button{
+    color: white;
+    background: #F75023;
+    padding: 10px 0px;
+    border: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
