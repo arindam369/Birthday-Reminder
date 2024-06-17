@@ -1,0 +1,13 @@
+<div class="upcomingBirthdaysContainer">
+    <h2>Upcoming Birthdays</h2>
+    <p>Stay up-to-date with all the upcoming birthdays in one convenient place</p>
+
+    @if(fetchUpcomingBirthdays.length===0){
+        <p>No Birthday in the next 30days</p>
+    }
+    @else{
+        @for(birthday of fetchUpcomingBirthdays; track $index){
+            <app-birthday-card [data]="birthday" />
+        }
+    }
+</div>

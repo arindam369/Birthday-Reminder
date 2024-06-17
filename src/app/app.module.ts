@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { UpcomingBirthdaysComponent } from './birthday/upcoming-birthdays/upcoming-birthdays.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     AddBirthdayComponent,
     ViewBirthdaysComponent,
-    BirthdayCardComponent
+    BirthdayCardComponent,
+    UpcomingBirthdaysComponent
   ],
   imports: [
     BrowserModule,

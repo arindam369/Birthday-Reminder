@@ -1,0 +1,15 @@
+.upcomingBirthdaysContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.upcomingBirthdaysContainer h2{
+    font-size: 2rem;
+    margin: 40px 0px 0px;
+}
+.upcomingBirthdaysContainer p{
+    font-size: 1rem;
+    width: 600px;
+    text-align: center;
+}

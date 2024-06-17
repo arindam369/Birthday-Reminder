@@ -31,5 +31,6 @@ export class AddBirthdayComponent {
       month: this.formData.enteredMonth,
     }
     this.birthdayService.addBirthday(data);
+    this.formData = {enteredName: "", enteredDay: "", enteredMonth: ""};
   }
 }

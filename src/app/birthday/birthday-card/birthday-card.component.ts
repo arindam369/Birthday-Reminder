@@ -22,4 +22,16 @@ export class BirthdayCardComponent {
   onDeleteBirthday(){
     this.birthdayService.removeBirthday(this.data.id);
   }
+
+  get dayDifference(){
+    const daysLeft = this.birthdayService.findDaysLeft(this.data.day, this.data.month);
+    if(daysLeft <= -1) return "birthday gone";
+    else if(-1< daysLeft && daysLeft <= 0) return "birthday today";
+    else return Math.round(daysLeft)+"d left";
+  }
+  get isUpcoming(){
+    const daysLeft = this.birthdayService.findDaysLeft(this.data.day, this.data.month);
+    if(daysLeft >= -1 && daysLeft <= 30) return true;
+    return false;
+  }
 }

@@ -14,13 +14,13 @@ export const dummyBirthdays : Birthday[] = [
         month: "9"
     },
     {
-        id: "0",
+        id: "3",
         name: "Arindam Halder",
         day: "23",
         month: "6"
     },
     {
-        id: "3",
+        id: "4",
         name: "Nidhi Shah",
         day: "29",
         month: "9"
