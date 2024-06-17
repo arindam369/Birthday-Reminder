@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { AddBirthdayComponent } from './birthday/add-birthday/add-birthday.component';
 import { ViewBirthdaysComponent } from './birthday/view-birthdays/view-birthdays.component';
 import { BirthdayCardComponent } from './birthday/birthday-card/birthday-card.component';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { BirthdayCardComponent } from './birthday/birthday-card/birthday-card.co
     BirthdayCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)  // confihure the router with the routes
   ],
   providers: [],
   bootstrap: [AppComponent]
