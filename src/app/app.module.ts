@@ -9,6 +9,8 @@ import { ViewBirthdaysComponent } from './birthday/view-birthdays/view-birthdays
 import { BirthdayCardComponent } from './birthday/birthday-card/birthday-card.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
+import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { routes } from './app.routes';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)  // confihure the router with the routes
+    FormsModule,
+    RouterModule.forRoot(routes), // configure the router with the routes
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

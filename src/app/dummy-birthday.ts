@@ -2,23 +2,27 @@ import { Birthday } from "./models/birthday.model";
 
 export const dummyBirthdays : Birthday[] = [
     {
-        name: "Arindam Halder",
-        day: "23",
-        month: "June"
-    },
-    {
+        id: "1",
         name: "Sanghita Gharami",
         day: "3",
-        month: "July"
+        month: "7"
     },
     {
+        id: "2",
         name: "Rajdeep Mallick",
         day: "23",
-        month: "September"
+        month: "9"
     },
     {
+        id: "0",
+        name: "Arindam Halder",
+        day: "23",
+        month: "6"
+    },
+    {
+        id: "3",
         name: "Nidhi Shah",
         day: "29",
-        month: "September"
+        month: "9"
     }
 ]

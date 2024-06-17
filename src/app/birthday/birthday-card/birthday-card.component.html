@@ -1,6 +1,7 @@
 <div class="birthdayBox">
     <h2>{{data?.name}}</h2>
     <div>
-        <p>{{data?.day}} {{data?.month}}</p>
+        <p>{{data?.day}} {{findBirthMonth(data?.month)}}</p>
     </div>
+    <fa-icon [icon]="faTrash" class="trashIcon" (click)="onDeleteBirthday()"></fa-icon>
 </div>

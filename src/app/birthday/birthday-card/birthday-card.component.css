@@ -8,10 +8,21 @@
     border-radius: 6px;
     background: rgb(59, 154, 59);
     color: white;
+    position: relative;
 }
 h2{
     font-size: 1.2rem;
 }
 p{
     font-size: .9rem;
+}
+.trashIcon{
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    padding: 0px 10px;
+    border: 0;
+    color: rgb(155, 0, 0);
+    background: transparent;
+    font-weight: 800;
 }

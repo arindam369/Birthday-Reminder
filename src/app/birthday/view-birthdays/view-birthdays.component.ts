@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { Birthday } from '../../models/birthday.model';
-import { dummyBirthdays } from '../../dummy-birthday';
+import { Component, inject } from '@angular/core';
+import { BirthdayService } from '../../services/BirthdayService';
 
 @Component({
   selector: 'app-view-birthdays',
@@ -9,9 +8,9 @@ import { dummyBirthdays } from '../../dummy-birthday';
 })
 
 export class ViewBirthdaysComponent {
-  allBirthdays: Birthday[] = dummyBirthdays;
+  private birthdayService = inject(BirthdayService);
 
   get fetchBirthdays(){
-    return this.allBirthdays;
+    return this.birthdayService.viewAllBirthdays();
   }
 }

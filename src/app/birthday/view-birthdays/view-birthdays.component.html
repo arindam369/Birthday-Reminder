@@ -2,7 +2,12 @@
     <h2>Birthday Details</h2>
     <p>Stay up-to-date with all your special ones' birthdays in one convenient place</p>
 
-    @for(birthday of fetchBirthdays; track $index){
-        <app-birthday-card [data]="birthday"/>
+    @if(fetchBirthdays.length===0){
+        <p>No Birthdays found . . .</p>
+    }
+    @else{
+        @for(birthday of fetchBirthdays; track $index){
+            <app-birthday-card [data]="birthday" />
+        }
     }
 </div>
