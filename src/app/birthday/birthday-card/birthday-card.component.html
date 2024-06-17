@@ -1,7 +1,7 @@
-<div [ngClass]="{'birthdayBox': true, 'upcoming': isUpcoming}">
+<div [ngClass]="{'birthdayBox': true, 'upcoming': isUpcoming, 'passed': isPassed}">
     <div class="textBox">
         <h2>{{data?.name}}</h2>
-        <p>{{data?.day}} {{findBirthMonth(data?.month)}}</p>
+        <p>{{data?.day}} {{findBirthMonth(data?.month).substring(0,3)}}</p>
     </div>
     <fa-icon [icon]="faTrash" class="trashIcon" (click)="onDeleteBirthday()"></fa-icon>
     <p class="daysLeft">({{dayDifference}})</p>

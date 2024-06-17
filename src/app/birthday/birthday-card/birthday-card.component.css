@@ -38,6 +38,41 @@ p{
     right: 10px;
     bottom: -5px;
 }
+
+@media (max-width: 530px){
+    .birthdayBox{
+        padding: 10px 20px;
+        margin: 10px;
+    }
+    .textBox{
+        width: 270px;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: .8rem;
+    }
+}
+@media (max-width: 400px){
+    .birthdayBox{
+        padding: 10px 20px;
+        margin: 10px;
+    }
+    .textBox{
+        width: 240px;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: .8rem;
+    }
+}
+
 .upcoming{
-    background: #d55a38;
+    background: #f0ad4e;
+}
+.passed{
+    background-color: #d55a38;
 }

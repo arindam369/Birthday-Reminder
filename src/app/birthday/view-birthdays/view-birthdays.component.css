@@ -13,3 +13,34 @@
     width: 600px;
     text-align: center;
 }
+
+@media (max-width: 640px){
+    .viewBirthdaysContainer h2{
+        font-size: 1.5rem;
+        margin: 40px 0px 0px;
+    }
+    .viewBirthdaysContainer p{
+        font-size: .9rem;
+        width: 400px;
+    }
+    button{
+        padding: 15px 25px;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+}
+@media (max-width: 450px){
+    .viewBirthdaysContainer h2{
+        font-size: 1.2rem;
+        margin: 40px 0px 0px;
+    }
+    .viewBirthdaysContainer p{
+        font-size: .8rem;
+        width: 300px;
+    }
+    button{
+        padding: 15px 25px;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+}

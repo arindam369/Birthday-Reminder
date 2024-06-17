@@ -38,3 +38,30 @@ a{
     text-decoration: none;
     color: black;
 }
+
+@media (max-width: 600px){
+    .navRight li{
+        margin: 0px 10px;
+        font-size: .9rem;
+    }
+    .navLeft h2{
+        font-size: 1rem;
+    }
+    .navLeft img{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 450px){
+    .navRight li{
+        margin: 0px 5px;
+        font-size: .8rem;
+    }
+    .navLeft h2{
+        font-size: .9rem;
+    }
+    .navLeft img{
+        width: 30px;
+        height: 30px;
+    }
+}

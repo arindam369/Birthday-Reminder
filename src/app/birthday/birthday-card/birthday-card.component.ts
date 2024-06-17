@@ -31,7 +31,12 @@ export class BirthdayCardComponent {
   }
   get isUpcoming(){
     const daysLeft = this.birthdayService.findDaysLeft(this.data.day, this.data.month);
-    if(daysLeft >= -1 && daysLeft <= 30) return true;
+    if(daysLeft > -1 && daysLeft <= 30) return true;
+    return false;
+  }
+  get isPassed(){
+    const daysLeft = this.birthdayService.findDaysLeft(this.data.day, this.data.month);
+    if(daysLeft <= -1) return true;
     return false;
   }
 }
